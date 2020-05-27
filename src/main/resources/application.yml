@@ -1,0 +1,18 @@
+server:
+  port: 8282
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://211.149.229.139:3306/es_test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: ck
+    password: 111111
+    filters: wall,mergeStat
+#  main:
+#    allow-bean-definition-overriding: true
+elasticsearch:
+  ip: 127.0.0.1:9200
+  user:
+  password:
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
